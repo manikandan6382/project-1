@@ -1,0 +1,212 @@
+:root{
+	--yellow:#EE8E0F;
+	--green:#54BF9D;
+	--red:#EE1B0F;
+	--white:whitesmoke;
+/*its a variable its means we use the differnt with 
+shortkey*/
+
+}
+
+body,h2{
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif ;
+}
+
+.landing{
+	background-image: url(image/spicyy.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	color:var(--white) ;
+}
+
+header a{
+	text-decoration: none;
+	color:var(--yellow);
+	min-width: 130px;
+}
+header{
+	display: flex;
+	padding: 1em;
+	min-width: ;
+	flex-wrap: wrap;
+	row-gap: 1em;
+}
+#logo{
+	flex: 3;
+	min-width: 230px;
+	font-size: 1.3em;
+}
+nav{
+	flex: 2;
+	display: flex;
+}
+nav a{
+	flex: 1;
+}
+nav :hover{
+	color:var(--green) ;
+}
+
+.main{
+	display: flex;
+	height: 40vh;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+    
+
+}
+.fine{
+	color: var(--red);
+	font-size: 2.5em;
+	font-weight: bolder ;
+}
+
+.fresh{
+	color: var(--yellow);
+    
+}
+
+.main div{
+	margin-top: .75em;
+}
+button{
+	margin-top: 2em;
+	width: 20vh;
+	border-radius: 15px;
+	padding: .7em;
+	background-color: var(--green);
+	color: var(--white);
+/*	border: 1px solid var(--green);*/
+}
+
+.menu{
+	font-style: italic;
+	display: grid;
+	background: linear-gradient(to right, rgb(100, 10, 10),rgb(33, 2, 2) );
+    color: var(--white);
+/*    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr) );*/
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+/*grid-template-columns: repeat(3, 1fr);*/
+}
+@media (min-width:801px)
+{
+	.menu{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+#menu,#loca{
+	background: linear-gradient(to right, rgb(100, 10, 10),rgb(33, 2, 2) );
+    font-size: 2.5em;
+    color: var(--red);
+    text-align: center;
+
+}
+
+.menu th{
+	color: var(--green);
+	font-size: 1.8em;
+}
+
+table{
+	width: 100%;
+	padding: 1em;
+}
+
+table tr{
+	display: flex;
+	justify-content: center;
+	margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+	justify-self: left;
+	flex: 1;
+
+}
+
+.menu td:nth-child(2){
+	justify-self: right;
+
+}
+
+
+.locations {
+	background: linear-gradient(to right, rgb(100, 10, 10),rgb(33, 2, 2) );
+	color: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+.locations h2{
+	color: var(--green);
+	margin-bottom: .8em;
+}
+
+.locations div{
+	flex: 1;
+	padding: 1em;
+	min-width: 190px;
+}
+
+#copy{
+	background: linear-gradient(to right, rgb(60, 0, 0),rgb(33, 2, 2) );
+   color: var(--white);
+   padding: .2em 1em;	
+}
+
+
+
+header a i, nav i{
+	margin-right:.5em ;
+}
+
+.social i{
+	font-size:40px ;
+	padding-right: 50px;
+
+
+}
+
+
+#cc{
+	margin-top: .5em;
+}
+
+#face{
+	
+	color: whitesmoke;
+	text-decoration: none;
+/*	transform: translate(10px);*/
+
+}
+
+#face:hover{
+	color: darkblue;
+/*transform: translate(-10px);*/
+}
+#twit{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#twit:hover{
+	color: skyblue;
+}
+#insta{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#insta:hover{
+	color: pink;
+}
+
+
+
+
+
+
